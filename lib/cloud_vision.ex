@@ -1,5 +1,4 @@
 defmodule CloudVision do
-  alias Goth.Token
   @features [label: "LABEL_DETECTION", logo: "LOGO_DETECTION", text: "TEXT_DETECTION",
    face: "FACE_DETECTION", landmark: "LANDMARK_DETECTION", safe_search: "SAFE_SEARCH_DETECTION",
    image_properties: "IMAGE_PROPERTIES", unspecified: "TYPE_UNSPECIFIED"

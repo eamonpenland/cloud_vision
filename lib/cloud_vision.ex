@@ -41,9 +41,7 @@ defmodule CloudVision do
   defp build_image(img_path, :stream) do
     IO.puts "**********************"
     IO.inspect img_path
-    IO.puts ">>>>>>>>>>>>>>>>>>>"
-    {:ok, %Token{token: token}} = Token.for_scope("https://www.googleapis.com/auth/cloud-platform")
-    IO.puts "********************** #{inspect token}"
+    IO.puts "**********************"
 
     %{content: Base.encode64(img_path)}
   end

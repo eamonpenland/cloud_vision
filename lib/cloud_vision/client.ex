@@ -9,7 +9,7 @@ defmodule CloudVision.Client do
   end
 
   def process_request_headers([]) do
-    {:ok, %Token{token: token}} = Token.for_scope("https://www.googleapis.com/auth/cloud-platform")
+    {:ok, token} = Token.for_scope("https://www.googleapis.com/auth/cloud-platform")
 
     [{"Authorization", "Bearer " <> token}]
   end

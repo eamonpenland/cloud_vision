@@ -46,8 +46,8 @@ defmodule CloudVision.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:httpoison, "~> 0.9.0"},
-      {:goth, "~> 0.2.0"},
+      {:httpoison, "~> 0.11.0"},
+      {:goth, "~> 0.4.0"},
       {:poison, "~> 2.0"}
     ]
   end

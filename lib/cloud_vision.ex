@@ -37,13 +37,7 @@ defmodule CloudVision do
     %{requests: [%{image: build_image(img_path, opts[:from]), features: build_features(opts[:features])}]}
 
   defp build_image(img_path, nil), do: build_image(img_path, :local)
-  defp build_image(img_path, :stream) do
-    IO.puts "**********************"
-    IO.inspect img_path
-    IO.puts "**********************"
-
-    %{content: Base.encode64(img_path)}
-  end
+  defp build_image(img_path, :stream), do: %{content: Base.encode64(img_path)}
   defp build_image(img_path, :local), do: %{content: Base.encode64(File.read!(img_path))}
   defp build_image(img_path, :storage), do:
     %{source: %{

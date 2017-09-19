@@ -29,7 +29,6 @@ use Mix.Config
 #
 
 
-config :goth, json: "config/dummy_creds.json" |> Path.expand |> File.read!
 config :cloud_vision, gcsUri: "dummy.appspot.com"
 
 import_config "#{Mix.env}.exs"

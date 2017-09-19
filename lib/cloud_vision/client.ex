@@ -10,7 +10,10 @@ defmodule CloudVision.Client do
 
   def process_request_headers([]) do
     {:ok, token} = Token.for_scope("https://www.googleapis.com/auth/cloud-platform")
-
+    IO.puts ",,,,,,,,,,,,,,,,,,,,,,,,,"
+    IO.inspect token
+    IO.puts ",,,,,,,,,,,,,,,,,,,,,,,,,"
+    
     [{"Authorization", "Bearer " <> token}]
   end
 end

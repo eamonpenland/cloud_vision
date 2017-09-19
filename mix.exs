@@ -48,7 +48,7 @@ defmodule CloudVision.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:httpoison, "~> 0.11.0"},
       {:goth, git: "https://github.com/eamonpenland/goth"},
-      {:poison, "~> 2.0"}
+      {:poison, "~> 3.1"}
     ]
   end
 end
